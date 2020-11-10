@@ -1,0 +1,364 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  padding: 0 4rem;
+  width: 100%;
+}
+
+.first {
+  margin: 5rem 0;
+}
+
+.first .first-text hr {
+  background-color: #e9204f;
+  border: none;
+  width: 70px;
+  height: 3px;
+}
+
+.first .all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.first .all .box {
+  width: 32%;
+  margin: 15px 0;
+  padding: 40px 30px;
+  background-color: #f1f1f1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-transition: .4s;
+  transition: .4s;
+  overflow: hidden;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.first .all .box:hover {
+  background-color: #e9204f;
+}
+
+.first .all .box:hover .at {
+  opacity: .8;
+  -webkit-transform: scale(7);
+          transform: scale(7);
+}
+
+.first .all .box:hover h5 {
+  color: #fff;
+  -webkit-transform: translateX(17px);
+          transform: translateX(17px);
+}
+
+.first .all .box:hover .ox {
+  color: #fff;
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
+}
+
+.first .all .box .at {
+  opacity: 0;
+  -webkit-transition: .4s;
+  transition: .4s;
+  color: #fff;
+}
+
+.first .all .box h5 {
+  font-size: 20px;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.first .all .box .ox {
+  -webkit-transition: .4s;
+  transition: .4s;
+  font-size: 20px;
+}
+
+.second .second-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.second .second-text .left {
+  width: 40%;
+}
+
+.second .second-text .right {
+  width: 50%;
+}
+
+.second .all {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.second .all .left {
+  width: 65%;
+}
+
+.second .all .left .box {
+  position: relative;
+  height: 100%;
+}
+
+.second .all .left .box .box-text {
+  position: absolute;
+  bottom: 30px;
+  left: 20px;
+}
+
+.second .all .left .box:hover img {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+}
+
+.second .all .left .box img {
+  width: 100%;
+  height: 100%;
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.second .all .right {
+  width: 33%;
+}
+
+.second .all .right .box {
+  position: relative;
+}
+
+.second .all .right .box .box-text {
+  position: absolute;
+  bottom: 30px;
+  left: 20px;
+}
+
+.second .all .right .box:hover img {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+}
+
+.second .all .right .box img {
+  width: 100%;
+  height: 100%;
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.third {
+  margin: 5rem 0;
+}
+
+.third .all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.third .all .left {
+  width: 40%;
+  position: relative;
+  z-index: 1;
+}
+
+.third .all .left::before {
+  content: "";
+  background-color: #E9204F;
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  z-index: -1;
+}
+
+.third .all .left img {
+  width: 100%;
+}
+
+.third .all .right {
+  width: 55%;
+}
+
+.footer {
+  background-color: #1b1b1b;
+  padding: 8rem 0;
+}
+
+.footer .all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer .all .box i {
+  color: #fff;
+  font-size: 20px;
+  border: 2px solid #E9204F;
+  border-radius: 100%;
+  padding: 14px;
+  margin: 0 6px;
+  cursor: pointer;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.footer .all .box i:hover {
+  color: #E9204F;
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+
+.footer .all .box h2 {
+  color: #ffffff;
+  font-size: 48px;
+}
+
+.footer .all .box a {
+  text-decoration: none;
+  border: 2px solid #E9204F;
+  padding: 17px 40px;
+  color: #fff;
+  font-size: 17px;
+  font-weight: bold;
+  z-index: 1;
+  position: relative;
+}
+
+.footer .all .box a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  z-index: -1;
+  width: 0%;
+  background-color: #E9204F;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.footer .all .box a:hover::before {
+  width: 100%;
+}
+
+.footer2 {
+  background-color: #161616;
+  padding: 40px 0;
+}
+
+.footer2 .all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer2 .all .box {
+  width: 50%;
+  text-align: center;
+}
+
+.footer2 .all .box:hover h2, .footer2 .all .box:hover p {
+  color: #E9204F;
+}
+
+.footer2 .all .box h2, .footer2 .all .box p {
+  color: #fff;
+  -webkit-transition: .4s;
+  transition: .4s;
+  cursor: pointer;
+}
+
+.footer3 {
+  background-color: #000;
+  padding: 30px 0;
+}
+
+.footer3 .all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer3 .all .left {
+  width: 50%;
+}
+
+.footer3 .all .left p {
+  color: #747474;
+}
+
+.footer3 .all .left p a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer3 .all .right {
+  width: 50%;
+  text-align: right;
+}
+
+.footer3 .all .right a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+  margin: 0 10px;
+  position: relative;
+}
+
+.footer3 .all .right a::before {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  height: 1px;
+  width: 0%;
+  background-color: #E9204F;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.footer3 .all .right a:hover::before {
+  width: 100%;
+}
+/*# sourceMappingURL=style.css.map */
